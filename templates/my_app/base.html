@@ -9,22 +9,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <title>Dr Petrescu Dragos</title>
+    <title>Doctor Petrescu Dragos</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top" id="my_nav">
-        <a href="{% url 'base' %}" class="navbar-brand" id="brand_n">Dr Petrescu Dragos</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: #005792;">
+        <div class="container">
+            <a href="{% url 'base' %}" class="navbar-brand">Doctor Petrescu Dragos</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto" id="ulist1">
                     <li class="nav-item">
-                        <a href="{% url 'base' %}" class="nav-link" id="a_1">Acasa</a>
+                        <a href="{% url 'base' %}" class="nav-link">Acasa</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'contact' %}" class="nav-link" id="a_2">Contact</a>
+                        <a href="{% url 'contact' %}" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
         <div class="container">
             <h1 id="header3" style="color: #bb8082;">Viziunea noastra</h1>
             <br>
-            <img class="float-right" src="https://images.unsplash.com/photo-1603807008857-ad66b70431aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvY3RvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=300px height=200px
+            <img class="float-right" src="https://images.unsplash.com/photo-1603807008857-ad66b70431aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRvY3RvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200px
             style="border-radius: 20px;">
             <p id="para4" style="padding-top: 30px;">"Un copil sanatos este un copil fericit!"</p>
             <p id="para2" style="padding-top: 0px;">
@@ -52,30 +52,38 @@
             <br>
             <div class="row">
                 <div class="col-md-4">
-                    <img class="float-left" src="https://images.unsplash.com/photo-1502781252888-9143ba7f074e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=450 height=250 style="border-radius: 20px;">
+                    <img class="float-left" src="https://images.unsplash.com/photo-1502781252888-9143ba7f074e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200 style="border-radius: 20px;padding-top: 12px;">
                 </div>
-                <div class="col-lg-8">
-                    <img class="float-right" src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=450px height=250px style="border-radius: 20px;">
+                <div class="col-md-4">
+                    <img class="float-right" src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200px style="border-radius: 20px;padding-top: 12px;">
                 </div>
             </div>
             <br>
-            <div class="new_item" style="margin-bottom: 150px;">
+            <div class="new_item" style="margin-bottom: 40px;">
                 <h1 id="header4" style="color: #9ecca4;">Despre noi</h1>
-                <img class="float-right" src="https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc0fHxkb2N0b3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=300px height=200px
-                style="border-radius: 20px;">
                 <p id="para5">Dr. Petrescu Dragos este absolvent al Facultății de Medicina și Farmacie “Iuliu Hatieganu” Cluj-Napoca in anul 2008, medic specialist pediatru din 2015, stagii de pregătire in Germania.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="float-left" src="https://images.unsplash.com/photo-1580281658223-9b93f18ae9ae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc0fHxkb2N0b3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200px
+                        style="border-radius: 20px;padding-top: 12px;">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="float-right" src="https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM5fHxkb2N0b3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200px
+                        style="border-radius: 20px;padding-top: 12px;">
+                    </div>
+                </div>
             </div>
             <br>
             <div class="new">
-                <h1 style="font-family: Arial, Helvetica, sans-serif; color: #a4ebf3;">Preturi</h1>
+                <h1 style="font-family: Arial, Helvetica, sans-serif; color: #a4ebf3;padding-top: 10px;">Preturi</h1>
                 <p id="para8" style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">Consultație Pediatrie 100 lei inițial, 30 de lei recontrolul( pana in 7 zile).</p>
                 <br>
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="float-left" src="https://images.unsplash.com/photo-1565843248736-8c41e6db117b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=450px height=250px style="border-radius: 20px;">
+                        <img class="float-left" src="https://images.unsplash.com/photo-1565843248736-8c41e6db117b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200px style="border-radius: 20px;padding-top: 12px;">
                     </div>
-                    <div class="col-lg-8">
-                        <img class="float-right" src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=450px height=250px style="border-radius: 20px;">
+                    <div class="col-md-4">
+                        <img class="float-right" src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNoaWxkcmVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=350px height=200px style="border-radius: 20px;padding-top: 12px;">
                     </div>
                 </div>
             </div>
